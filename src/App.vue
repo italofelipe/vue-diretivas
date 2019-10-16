@@ -3,6 +3,7 @@
       <h2>Filtros e Mixins</h2>
       <hr>
       <strong><p>{{cpf | formatarCpf | inverter}}</p></strong>
+      <input type="text" :value="cpf | formatarCpf">
 
   </div>
 </template>
@@ -41,5 +42,9 @@ export default {
 
 p {
     font-size: 1.45em;
+}
+
+input {
+    font-size: 1.40em;
 }
 </style>
