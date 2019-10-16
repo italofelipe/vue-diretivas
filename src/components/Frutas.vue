@@ -10,20 +10,11 @@
 </template>
 
 <script>
+    import frutasMixins from '../mixins/frutasMixins';
     export default {
         name: "Frutas",
-        data() {
-            return {
-                fruta: '',
-                frutas: ['Abacaxi', 'Laranja', 'Maracujá']
-            }
-        },
-        methods: {
-            add() {
-                this.frutas.push(this.fruta);
-                this.fruta = '';
-            }
-        }
+        mixins: [frutasMixins],
+
     }
 
 </script>
